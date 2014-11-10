@@ -131,7 +131,7 @@ public final class HttpProxyHandler extends ProxyHandler {
         }
 
         if (authorization != null) {
-            req.headers().set(HttpHeaderNames.AUTHORIZATION, authorization);
+            req.headers().set(HttpHeaderNames.PROXY_AUTHORIZATION, authorization);
         }
 
         return req;
